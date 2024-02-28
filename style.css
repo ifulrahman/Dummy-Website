@@ -169,3 +169,8 @@ section::before {
         transform: translateY(0);
     }
 }
+
+.nav-link:hover {
+    font-weight: bold;
+    color: black;
+}
