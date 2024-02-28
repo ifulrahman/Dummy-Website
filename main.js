@@ -12,3 +12,23 @@ function toggleDetail (e) {
 
     $(detail).slideToggle()
 }
+
+function onFormSubmit(e) {
+    e.preventDefault()
+    const email = $('#inp_email')
+    const subject = $('#inp_subject')
+    const message = $('#inp_message')
+
+    if(!$(email).val()) {
+        alert('Please enter your email')
+    } else if(!$(subject).val()) {
+        alert('Please enter your subject')
+    } else if(!$(message).val()) {
+        alert('Please enter your message')
+    } else {
+        alert('Form Submitted !')
+        $(email).val("")
+        $(subject).val("")
+        $(message).val("")
+    }
+}
